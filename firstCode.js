@@ -9,7 +9,7 @@ var EnumOperator;
 })(EnumOperator || (EnumOperator = {}));
 function calculator(numA, numB, operation) {
     if (!validNumber(numA) || !validNumber(numB)) {
-        console.log("Valores inválidos, digite apenas números.");
+        console.log("Números inválidos.");
         return 0;
     }
     switch (operation) {
@@ -38,7 +38,6 @@ function calculator(numA, numB, operation) {
 function validNumber(value) {
     return !isNaN(value);
 }
-console.log("Sejam Bem Vindos!");
 console.log(calculator('d', 13, EnumOperator.sum));
 console.log(calculator(3, 13, EnumOperator.subtraction));
 console.log(calculator(3, 13, EnumOperator.division));
