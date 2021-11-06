@@ -2,9 +2,13 @@ enum EnumOperator{
     sum, subtraction, division, multiply, rest
 }
 
-function calculator(numA : number, numB : number, operation : EnumOperator) : number{
+function calculator(numA : any, numB : any, operation : EnumOperator) : number{
+    if(!validNumber(numA) || !validNumber(numB)){
+        console.log("Números inválidos.");
+        return 0;
+    }
+    
     switch(operation){
-
         case EnumOperator.sum:
             console.log("O resultado da operação será: ");
             return numA + numB;
@@ -30,10 +34,13 @@ function calculator(numA : number, numB : number, operation : EnumOperator) : nu
                 return numA % numB;
                 break;
     }
-
 }
 
-console.log(calculator(3, 13, EnumOperator.sum));
+function validNumber(value : any): boolean{
+    return !isNaN(value);
+}
+
+console.log(calculator('d', 13, EnumOperator.sum));
 console.log(calculator(3, 13, EnumOperator.subtraction));
 console.log(calculator(3, 13, EnumOperator.division));
 console.log(calculator(3, 13, EnumOperator.multiply));
