@@ -6,22 +6,26 @@ function calculator(numA : number, numB : number, operation : EnumOperator) : nu
     switch(operation){
 
         case EnumOperator.sum:
+            console.log("O resultado da operação é: ");
             return numA + numB;
             break;
 
         case EnumOperator.subtraction:
+            console.log("O resultado da operação é: ");
             return numA - numB;
             break;
 
             case EnumOperator.division: 
+            console.log("O resultado da operação é: ");
             return numA/numB;
             break;
 
             default:
+                console.log("O resultado da operação é: ");
                 return numA * numB;
                 break;
     }
-    
+
 }
 
 console.log(calculator(3, 13, EnumOperator.sum));
