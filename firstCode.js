@@ -9,15 +9,19 @@ var EnumOperator;
 function calculator(numA, numB, operation) {
     switch (operation) {
         case EnumOperator.sum:
+            console.log("O resultado da operação é: ");
             return numA + numB;
             break;
         case EnumOperator.subtraction:
+            console.log("O resultado da operação é: ");
             return numA - numB;
             break;
         case EnumOperator.division:
+            console.log("O resultado da operação é: ");
             return numA / numB;
             break;
         default:
+            console.log("O resultado da operação é: ");
             return numA * numB;
             break;
     }
