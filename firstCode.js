@@ -31,7 +31,7 @@ function calculator(numA, numB, operation) {
             break;
     }
 }
-console.log(calculator('d', 13, EnumOperator.sum));
+console.log(calculator(3, 13, EnumOperator.sum));
 console.log(calculator(3, 13, EnumOperator.subtraction));
 console.log(calculator(3, 13, EnumOperator.division));
 console.log(calculator(3, 13, EnumOperator.multiply));
