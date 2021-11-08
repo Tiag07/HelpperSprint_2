@@ -23,14 +23,11 @@ var VowelsQuantity = /** @class */ (function () {
             else
                 txtResults === null || txtResults === void 0 ? void 0 : txtResults.innerHTML = "O texto \"" + originalText + "\" cont\u00E9m " + vowelsQuantity + " vogais!";
         }
-        console.log("O texto \"" + originalText + "\" cont\u00E9m " + vowelsQuantity + " vogais!"); //Também mostra no console .
+        console.log("O texto \"" + originalText + "\" cont\u00E9m " + vowelsQuantity + " vogais!"); //Também mostra no console.
     };
     return VowelsQuantity;
 }());
-var vowelsQuantity = new VowelsQuantity();
-function showVowelsQuantityViaHtml() {
-    vowelsQuantity.showVowelsQuantity();
-}
+var vowelsQuantity = new VowelsQuantity(); //Chamada pelo html
 //Exemplos sendo chamados pelo console
 var vowelsQuantityArvore = new VowelsQuantity("Árvore", true);
 vowelsQuantityArvore.showVowelsQuantity();
